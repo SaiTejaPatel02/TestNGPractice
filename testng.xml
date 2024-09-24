@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browserName" value="Chrome" />
+	<parameter name="url"
+		value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" />
+	<parameter name="username" value="Admin" />
+	<parameter name="password" value="admin123" />
+	<parameter name="sleepTime" value="10" />
+	<test name="ParameterizationTestNG">
+		<classes>
+			<class name="com.TestNGPractice.ParameterizationTestNG">
+				<methods>
+					<include name="LaunchApp" />
+					<include name="EnterLoginDetails" />
+					<include name="VerifyLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
